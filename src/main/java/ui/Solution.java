@@ -1,3 +1,7 @@
+//Jan Brkic
+//janbrkic3@gmail.com
+//Faculty of electrical engineering and computing Zagreb
+
 package ui;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -77,23 +81,6 @@ public class Solution {
         }
 
     }
-    /*static class HeuristicNode extends Node {
-        private double heusristicTotalCost;
-
-        public HeuristicNode(String state, Node parent, double cost, double costForPassingInOtherState, double heusristicTotalCost) {
-            super(state, parent, cost, costForPassingInOtherState);
-            this.heusristicTotalCost = heusristicTotalCost;
-        }
-
-        public double getHeusristicTotalCost() {
-            return heusristicTotalCost;
-        }
-
-        public static final Comparator<HeuristicNode> COMPARE_BY_TOTAL_HEURISTIC =
-                (n1, n2) -> Double.compare(n1.getHeusristicTotalCost(), n2.getHeusristicTotalCost());
-
-
-    }*/
     static public class HeuristicNode implements Comparable<HeuristicNode>{
         private String state;
         private HeuristicNode parent;
@@ -410,17 +397,7 @@ public class Solution {
                     childNode = new Node(node.split(",")[0], n,n.getCost(), 0);
                 }
 
-                //double UCSCost = Double.parseDouble(node.split(",")[1]) + n.getCost();
-
                 Iterator <Node> it = open.iterator();
-                /*for (Node nodeInOpen : open) {
-                    if (!childNode.getState().equals(nodeInOpen.getState())) continue;
-                    if (nodeInOpen.getCost() <= childNode.getCost()) {
-                        addToOpen = false;
-                    }else {
-                        open.remove (nodeInOpen);
-                    }
-                }*/
                 while (it.hasNext()){
                     Node nodeInOpen = it.next();
                     if (!childNode.getState().equals(nodeInOpen.getState())) continue;
