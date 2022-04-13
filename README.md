@@ -1,5 +1,6 @@
 # Path-finding
 A*, bfs, ucs
+Program implemented as part of Laboratory exercise based on AI.
 
 
 ## Table of contents
@@ -28,3 +29,5 @@ istra_heuristic.txt
 ```
 where --alg is flag that next command is type of alghoritm, --ss is flag for file in which are distance between towns. 
 Last flag (--h) is used for heuristic file
+
+You need to add heuristic file only while using Astar alghoritm.
