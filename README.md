@@ -1,5 +1,6 @@
 # Path-finding
 A*, bfs, ucs
+
 Program implemented as part of Laboratory exercise based on AI.
 
 
