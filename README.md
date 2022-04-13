@@ -22,7 +22,8 @@ There is a file in resources called istra.txt that has names od Istra towns and 
 
 Code is written in Java so make a call with 
 ```
-java -cp target/classes ui.Solution --alg <<bfs, astar, ucs>> --ss istra.txt --h
+>>> mvn compile
+>>> java -cp target/classes ui.Solution --alg <<bfs, astar, ucs>> --ss istra.txt --h
 istra_heuristic.txt
 ```
 where --alg is flag that next command is type of alghoritm, --ss is flag for file in which are distance between towns. 
