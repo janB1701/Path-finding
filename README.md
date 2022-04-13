@@ -27,7 +27,7 @@ Code is written in Java so make a call with
 >>> java -cp target/classes ui.Solution --alg <<bfs, astar, ucs>> --ss istra.txt --h
 istra_heuristic.txt
 ```
-where --alg is flag that next command is type of alghoritm, --ss is flag for file in which are distance between towns. 
+where --alg is flag that next command is type of algorithm, --ss is flag for file in which are distance between towns. 
 Last flag (--h) is used for heuristic file
 
-You need to add heuristic file only while using Astar alghoritm.
+You need to add heuristic file only while using Astar algorithm.
